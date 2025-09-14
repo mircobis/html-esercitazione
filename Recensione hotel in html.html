@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+<meta charset="UTF-8">
+    <title>Valutazione Hotel Sole Azzurro</title>
+</head>
+<body>
+  <main>
+    <h1>Hotel Sole Azzurro</h1>
+    <p>Via Roma 123, Milano</p>
+    <p>+3902123456 - info@hotelsoleazzurro.it</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Hotel_pic.jpg" width="300">
+<form>
+  <br><fieldset>  
+  <legend><h2>Dati del cliente</h2></legend>
+  <label for="nome del cliente">Nome del cliente</label>
+  <input type="text"
+         id="name"
+         name="name"
+         placeholder="es. Mario rossi"
+         required>
+  <br><br><label for="email del cliente">Email del cliente</label>
+  <input type="email"
+         id="email"
+         name="email"
+         placeholder="es. mariorossi@gmail.com"
+         required>
+  <br><br><label for="data del soggiorno">Data del soggiorno</label>
+  <input type="date"
+         id="date"
+         name="date"
+         placeholder="es. 01/01/2025"
+         required>
+  <br><br><label for="numero di stanza">Numero di stanza</label>
+  <input type="number"
+         id="number"
+         name="number"
+         placeholder="es. 1"
+         required>
+  </fieldset>
+  <!--VALUTAZIONE-->
+  <fieldset>
+    <section>
+    <h2>Valutazione</h2>
+    <p>Valuta da 1 (scarso) a 5 (ottimo):</p>
+    <label>Pulizia:</label>
+     <select id="pulizia">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select><br><br>
+    <label>Comfort:</label>
+     <select id="comfort">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select><br><br>
+    <label>Servizi:</label>
+     <select id="servizi">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select><br><br>
+    <label>Personale:</label>
+     <select id="personale">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select><br><br>
+    <label>Qualit&agrave;-Prezzo:</label>
+     <select id="qualit&agrave;-prezzo">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select>
+    </section>
+  </fieldset>
+  <!--MIGLIORIE-->
+  <fieldset>
+  <section>
+    <h2>Aree da migliorare:</h2>
+     <label><input type="checkbox"
+                   name="migliorie"
+                   value="wifi">Wi-Fi</label><br><br>
+     <label><input type="checkbox"
+                   name="migliorie"
+                   value="colazione">Colazione</label><br><br>
+     <label><input type="checkbox"
+                   name="migliorie"
+                   value="reception">Reception</label><br><br>
+     <label><input type="checkbox"
+                   name="migliorie"
+                   value="parcheggio">Parcheggio</label><br><br>
+     <label><input type="checkbox"
+                   name="migliorie"
+                   value="manutenzione">Manutenzione</label><br><br>
+     <label><input type="checkbox"
+                   name="migliorie"
+                   value="altro">Altro</label>
+  </section>
+  </fieldset>
+  <!--COMMENTI AGGIUNTIVI-->
+  <fieldset>
+    <section>
+     <h2>Commenti aggiuntivi</h2>
+     <textarea name="commenti"rows="6"cols="50"placeholder="Scrivi qui la tua esperienza..."></textarea>
+     <button type="submit">Invia</button>          
+    </section>
+  </fieldset>
+</form>
+</main>   
+</body>
+</html>
